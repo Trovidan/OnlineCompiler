@@ -1,0 +1,171 @@
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  background-color: #fffdf9;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 6vw;
+  min-height: 43.5vw;
+}
+
+a{
+  text-decoration: none;
+  font-size: 30px;
+  color: #7a4d10;
+}
+
+a:hover{
+  color: #0f0;
+}
+
+img{
+  height: 30px;
+  padding: 10px 10px;
+}
+
+/*****************************navbar************************/
+
+#navbar{
+  background-color: #75daad;
+  height: 5vw;
+  border-bottom: solid;
+  border-color: #216353;
+  position: relative;
+  /* padding-top: 5px; */
+}
+#logo{
+  font-family: 'Monoton', cursive;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0 0 0 100px;
+  color: #7a4d1d;
+}
+#navbar-list{
+  float:right;
+  margin:0 70px 0 0;
+  padding: 20px 0 0 0;
+}
+.navbar-list-item{
+  list-style-type: none;
+  display:inline;
+  font-size: 25px;
+  padding: 0 40px 0 20px;
+}
+.nav-link{
+  color: #edffea;
+  font-size: 30px;
+}
+
+.nav-link:hover{
+  color: #7a4d1d;
+}
+
+/****************************************************************/
+
+/****************************name-lang***********************************/
+
+.name-lang{
+  width:80%;
+  margin: 0 10%;
+  min-height: 35px;
+  position: relative;
+}
+
+label{
+  position: absolute;
+  right: 75px;
+}
+
+#lang{
+position: absolute;
+right: 0;
+bottom: 8px;
+}
+
+.file-name{
+  width:30%;
+  border-radius: 10px;
+  padding: 5px 3px;
+}
+
+/****************************posts display*******************************/
+
+.post-block{
+  margin: 30px auto 0 auto;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #f1f3f4;
+  width: 60%;
+}
+
+.post-heading{
+  font-family: 'Oxanium', cursive;
+  margin: 15px 0 15px 0;
+}
+.post{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+.post-error{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color : red;
+}
+
+.hide{
+  display: none;
+}
+/***********************************************************************/
+
+/******************************post************************************/
+
+.text-input{
+  width:80%;
+  margin:20px 10%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.submit{
+  background-color: #75daad;
+  margin: 0 47.5% 0 47.5%;
+  border-color: #000;
+  border-style: dotted;
+  border-radius: 20%;
+  font-size: 20px;
+  color:#000;
+  width:12%;
+}
+
+.submit:hover{
+  color: #7a4d1d;
+  border-color: #7a4d1d;
+}
+
+.note{
+  color:grey;
+  font-size: 16px;
+}
+/***********************************************************************/
+
+/****************************footer******************************/
+#footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #75daad;
+  width: 100%;
+  height: 5vw;
+  text-align: center;
+  color: #fffdf9;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+.promotion{
+  position: absolute;
+  opacity: 0%;
+}

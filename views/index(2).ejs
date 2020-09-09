@@ -1,0 +1,56 @@
+<%- include('partials/header') -%>
+
+    <div class="post-block">
+      <%if(fileNo==-1){%>
+          <h1 class="post-heading">CodeIt!</h1>
+      <%}%>
+      <form class="" action="/compile" method="post">
+
+        <div class="name-lang">
+          <%if(fileNo>-1){%>
+            <h1 class="post-heading">EditIt!</h1>
+            <span>File Name:</span>
+            <input class = "file-name" type="text" name="save" value="<%=fileName%>" placeholder="<%=fileName%>" required >
+          <%}%>
+
+          <%if(fileNo==-1){%>
+
+            <span class="save-name"></span>
+          <%}%>
+          <label for="lang">Language: </label>
+          <select id="lang" name="lang">
+            <option value="1">C++</option>
+            <option value="2">C</option>
+            <option value="1">JAVA</option>
+            <option value="1">Python</option>
+          </select>
+        </div>
+
+        <textarea class="text-input" name="code" rows="20" cols="80" placeholder="CodeIt here Bro!" ><%=code%></textarea>
+        <textarea class="text-input" name="customInput" rows="4" cols="80" placeholder="Any inputs!"></textarea>
+
+
+        <%if(fileNo>-1){%>
+          <button class="submit" type="submit" name="submit" value="2">Save & Run</button>
+        <%}%>
+        <%if(fileNo==-1){%>
+          <button class="submit" type="submit" name="submit" value="0">Run It!</button>
+          <p class="note"><input id="save" type="checkbox">Save this code as a file;</p>
+        <%}%>
+      </form>
+    </div>
+
+    <%if(compiled!=0){%>
+      <div class="post-block">
+        <h1 class="post-heading">OUTPUT</h1>
+        <%if(compiled==1){%>
+          <textarea class="text-input" name="customInput" rows="6" cols="80" placeholder="Any inputs!" disabled><%=output%></textarea>
+        <%}%>
+        <%if(compiled==2){%>
+          <textarea class="text-input post-error" name="customInput" rows="10" cols="80" placeholder="Any inputs!" disabled><%=output%></textarea>
+        <%}%>
+      </div>
+    <%}%>
+
+
+<%- include('partials/footer') -%>

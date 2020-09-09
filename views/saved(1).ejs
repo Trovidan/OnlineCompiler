@@ -1,0 +1,15 @@
+<%- include('partials/header') -%>
+<div class="post-block">
+  <%if(count==0){%>
+    <h1 class="post-heading">Nothing here to see! Go do some code first</h1>
+  <%}%>
+  <%if(count!=0){%>
+    <h1 class="post-heading">Saved Files!</h1>
+    <ul>
+      <%for(let i=0;i<count;i++){%>
+        <li><a href="/saved/<%=i%>"><%=save_name[i]%></a></li>
+      <%}%>
+    </ul>
+  <%}%>
+</div>
+<%- include('partials/footer') -%>
